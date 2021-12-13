@@ -89,6 +89,6 @@ $ npm start
 
 ## Contact
 
-- Website [https://feihachim.github.io/recipe-page/](https://{https://feihachim.github.io/recipe-page/})
+- Website [https://feihachim.github.io/recipe-page/](https://feihachim.github.io/recipe-page/)
 - GitHub [@your-username](https://{github.com/your-usermame})
 - Twitter [@your-twitter](https://{twitter.com/your-username})
