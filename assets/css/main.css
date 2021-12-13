@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+header,
+main,
+footer {
+  width: 80%;
+  display: flex;
+}
+
+header {
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+header h1,
+.cell-text {
+  width: 50%;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 80%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.cooking-time {
+  width: 40%;
+  height: min-content;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.cooking-time ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.cooking-time li {
+  display: flex;
+  column-gap: 17px;
+}
+
+.cooking-instructions {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+article {
+  width: 60%;
+  margin: 30px;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.ingredients div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.ingredients ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.cooking-time li {
+  display: flex;
+  align-items: center;
+}
+
+.cooking-time img {
+  width: 32px;
+  height: auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+article li {
+  display: flex;
+  column-gap: 17px;
+}
+
+.cell {
+  width: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px 1px;
+  margin-top: 5px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.cell span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.header-text {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 17px;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+:not(h1),
+:not(h2),
+:not(h3) {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.cell-text {
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+label span {
+  font-weight: 700;
+}
+
+.ingredients-cheesecake:last-child span {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.instructions li {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.instructions span {
+  font-weight: 700;
+}
+
+i {
+  font-weight: 400;
+  font-style: italic;
+  color: #bdbdbd;
+}
+
+ol {
+  counter-reset: instruction;
+  list-style-type: none;
+}
+
+ol li {
+  display: inherit;
+  position: relative;
+  left: 57px;
+  margin-bottom: 50px;
+}
+
+ol li::before {
+  counter-increment: instruction;
+  content: counter(instruction);
+  position: absolute;
+  left: -57px;
+  top: 3px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  background-color: #f2994a;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.cooking-time-label {
+  font-weight: 700;
+  font-size: 10px;
+  color: #bdbdbd;
+}
+
+.cooking-time-content {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+
+.servings {
+  color: #f2994a;
+}
+
+.menu-icon {
+  background-color: #f2994a;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  section,
+  article,
+  div {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .cell-text {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .cooking-time {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+  ul,
+  ol {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .instructions {
+    max-width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    justify-content: center;
+  }
+}
